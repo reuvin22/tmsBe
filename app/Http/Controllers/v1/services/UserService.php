@@ -14,8 +14,8 @@ class UserService extends Controller
     public function createData(Request $request) {
         $data = $request->input('data');
         $actionType = $request->input('actionType');
-        $userIdRandom = "USER-". random_int(0, 999999);
-        $staffIdRandom = "Staff-". random_int(0,999999);
+        $userIdRandom = "US-". random_int(0, 9999);
+        $staffIdRandom = "SF-". random_int(0,9999);
         try{
         switch($actionType){
             case 'addUser':

@@ -12,7 +12,7 @@ class ReportService extends Controller
     public function createReport(Request $request){
         $data = $request->input('data');
         $actionType = $request->input('actionType');
-        $reportIdRandom = 'REPORT-'. random_int(0, 999999999);
+        $reportIdRandom = 'RP-'. random_int(0, 9999);
         try{
             switch($actionType){
                 case 'addReport':

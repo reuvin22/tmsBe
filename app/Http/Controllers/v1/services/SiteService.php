@@ -11,7 +11,7 @@ class SiteService extends Controller
     public function addSite(Request $request){
         $data = $request->input('data');
         $actionType = $request->input('actionType');
-        $sitesIdRandom = 'SITE-'. random_int(0, 999999);
+        $sitesIdRandom = 'ST-'. random_int(0, 9999);
         try{
             switch($actionType){
                 case 'addSites':
